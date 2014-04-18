@@ -243,7 +243,48 @@ for i = 1, 5 do
     end
 end
 
+-- ------------------------------- criando funções --------------------
 
+-- exemplo de sintaxe de função 
+--
+function soma(a,b)
+	return a+b
+end
+
+-- exemplo de sintaxe de função (sintax sugar)
+--
+soma = function(a,b)
+	return a+b
+end
+
+
+-- exemplo de uso
+--
+aux = soma(2,4)
+print(aux) --> 6
+
+print(soma(4,-4)) --> 0
+	
+-- usando multiplo retorno de função
+-- exemplo de sintaxe 
+--
+function retornos():
+	return "teste", "teste2", "teste3"
+end
+
+-- usando multiplo retorno de funçao 
+-- exemplo de sintaxe 
+--
+retorno = function()
+	return "teste", "teste2", "teste3"
+end
+
+
+-- usando retorno multiplo
+--
+aux1, aux2, aux3 = retornos()
+
+print(aux1, aux2, aux3) --> teste  teste2  teste3 
 
 
 
